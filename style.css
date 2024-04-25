@@ -26,8 +26,25 @@ body {
   place-content: center;
 }
 
+.header {
+  width: 30rem;
+}
+
+.header > h1 {
+  color: #202020;
+  font-size: clamp(2.25rem, 3vw, 3rem);
+}
+
+.header > .description {
+  color: #3c3c3c;
+  text-wrap: balance;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 500;
+}
+
 .container {
   width: 30rem;
+  margin: auto;
   display: flex;
   gap: 0.5rem;
   margin-block-start: 1.5rem;
@@ -44,6 +61,7 @@ body {
 .container .list {
   font-size: clamp(0.875rem, 3vw, 1rem);
   background-color: #af8260;
+  color: #202020;
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -56,9 +74,16 @@ body {
   font-size: clamp(0.75rem, 2.5vw, 0.875rem);
 }
 
+.copywrite {
+  color: #202020;
+  margin-block-start: 1.25rem;
+  font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+}
+
 /* phone screen */
 @media (width <= 30rem) {
-  .container {
+  .container,
+  .header {
     width: 22rem;
   }
 
