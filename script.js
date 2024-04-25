@@ -1,4 +1,4 @@
-const lists = document.getElementsByClassName("list");
+const lists = document.querySelectorAll(".list");
 const leftSide = document.querySelector(".left");
 const rightSide = document.querySelector(".right");
 
